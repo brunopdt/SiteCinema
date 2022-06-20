@@ -1,0 +1,102 @@
+main {
+  background-color: #222831;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#titulo {
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-text {
+  color: #fff;
+}
+
+.populares {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+
+.card {
+  --bs-card-bg: none;
+  --bs-card-border-width: none;
+  --bs-card-spacer-y: 0.5rem;
+  --bs-card-spacer-x: 0rem;
+}
+
+.footertext {
+  margin-top: 15px;
+  align-self: center;
+  color: #212529;
+}
+
+#pagetitle {
+  color: #eee;
+}
+
+.logo {
+  width: 4em;
+  height: 4em;
+  margin-left: 2em;
+}
+
+#navbar {
+  background-color: #393e46 !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p.card-text {
+  margin-bottom: 0px;
+}
+
+#textoPesquisa {
+  background-color: #393e46;
+}
+
+#searchForm {
+  display: flex;
+  margin-right: 2rem;
+}
+
+#ultimaInfo {
+  margin-bottom: 5vw;
+}
+
+#pagina-pesquisa {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div {
+  margin: 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  #searchForm {
+    margin-right: 0.5rem;
+  }
+
+  .logo {
+    margin-left: 0.5em;
+  }
+
+  #search {
+    width: 12em;
+    margin-right: 1em;
+  }
+
+  #search {
+    margin-right: 1.6em;
+  }
+}

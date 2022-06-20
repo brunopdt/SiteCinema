@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal de Filmes</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body onload="init()">
+    <nav class="navbar navbar-light bg-light" id="navbar">
+      <a href="index.html"
+        ><img class="logo" src="imgs/logo.webp" alt="logo" />
+      </a>
+      <div class="tela-pesquisa" class="form-inline" id="searchForm">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Pesquisar"
+          id="textoPesquisa"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" id="btnPesquisa">
+          Pesquisar
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div id="bloco1">
+        <div><h2 id="titulo">Filmes Populares</h2></div>
+        <div class="container-fluid">
+          <div class="row" id="populares">
+            <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
+              <a href="detalhes_filme.html?id=550"
+                ><img class="card-img-top" alt="fotoFilme"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bloco2">
+        <div><h2 id="titulo">Lançamentos</h2></div>
+        <div class="container-fluid">
+          <div class="row" id="embreve">
+            <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
+              <a href="detalhes_filme.html?id=550"
+                ><img class="card-img-top" alt="fotoFilme"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bloco3">
+        <div><h2 id="titulo">Lançamentos</h2></div>
+        <div class="container-fluid">
+          <div class="row" id="embreve">
+            <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
+              <a href="detalhes_filme.html?id=550"
+                ><img class="card-img-top" alt="fotoFilme"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row" id="pagina-pesquisa">
+          <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <p class="footertext">
+          © 2022 Copyright: Desenvolvimento de Interfaces Web -
+          <b>ICEI PUC MINAS</b>
+          <img class="logo" src="imgs/logo.webp" alt="logo" />
+        </p>
+      </div>
+    </footer>
+    <script src="pesquisas.js"></script>
+  </body>
+</html>

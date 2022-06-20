@@ -1,0 +1,92 @@
+#navbar {
+  background-color: #393e46 !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#searchForm {
+  display: flex;
+  margin-right: 2rem;
+}
+
+#textoPesquisa {
+  background-color: #393e46;
+}
+
+.logo {
+  width: 4em;
+  height: 4em;
+  margin-left: 2em;
+}
+
+.footertext {
+  margin-top: 15px;
+  align-self: center;
+  color: #212529;
+}
+
+main {
+  background-color: #222831;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 3vw;
+}
+
+.card-text {
+  color: #fff;
+  margin-left: 3vw;
+}
+
+#ultimaInfo {
+  margin-bottom: 10vw;
+}
+
+#poster {
+  width: 40%;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 480px) {
+  #searchForm {
+    margin-right: 0.5rem;
+  }
+
+  .logo {
+    margin-left: 0.5em;
+  }
+
+  #search {
+    width: 12em;
+    margin-right: 1em;
+  }
+
+  .card-title {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  #poster {
+    width: 100%;
+    margin-top: 5vw;
+  }
+
+  #search {
+    margin-right: 1.6em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-title {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+}
