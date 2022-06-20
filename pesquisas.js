@@ -25,15 +25,13 @@ function exibeResultados() {
       textoPesquisa =
         textoPesquisa +
         `
-            <div class="itens-pesquisados" style="padding-top: 2em">
-            <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2 mx-auto">
+            <div class="itens-pesquisados" style="padding-top: 2em">  
             <a href="detalhes_filme.html?id=${retornoPesquisa.id}"><img src="https://image.tmdb.org/t/p/w500${retornoPesquisa.poster_path}" class="card-img-top" width="200" alt="Filme"></a>
                     <div class="card-body">
                         <h5 class="card-title">${retornoPesquisa.title}</h5>
                         <p class="card-text">${retornoPesquisa.vote_average}</p>
                         <p class="card-text">${retornoPesquisa.release_date}</p>
                     </div>
-                </div>
             </div>
         `
     }

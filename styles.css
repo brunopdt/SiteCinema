@@ -75,11 +75,16 @@ p.card-text {
 #pagina-pesquisa {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 div {
   margin: 0 0;
+}
+
+.itens-pesquisados {
+  width: 280px;
 }
 
 @media screen and (max-width: 480px) {

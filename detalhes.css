@@ -64,7 +64,7 @@ main {
     margin-left: 0.5em;
   }
 
-  #search {
+  #textoPesquisa {
     width: 12em;
     margin-right: 1em;
   }
@@ -79,7 +79,7 @@ main {
     margin-top: 5vw;
   }
 
-  #search {
+  #textoPesquisa {
     margin-right: 1.6em;
   }
 }
