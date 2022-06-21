@@ -22,6 +22,7 @@ function exibeResultados() {
     for (i = 0; i < dadosPesquisa.results.length; i++) {
       let retornoPesquisa = dadosPesquisa.results[i]
       localStorage.setItem('pesquisaFilmes', dadosPesquisa)
+      let anoEstreia = new Date(retornoPesquisa.release_date)
       textoPesquisa =
         textoPesquisa +
         `
@@ -32,7 +33,9 @@ function exibeResultados() {
           retornoPesquisa.poster_path
         }" class="card-img-top" width="200" alt="Filme"></a>
                     <div class="card-body">
-                        <h5 class="card-title">${retornoPesquisa.title}</h5>
+                        <h5 class="card-title">${
+                          retornoPesquisa.title
+                        } (${anoEstreia.getFullYear()})</h5>
                         <p class="card-text ${getColor(
                           retornoPesquisa.vote_average
                         )}" >${retornoPesquisa.vote_average}</p>
