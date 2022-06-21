@@ -25,7 +25,7 @@ function exibeResultados() {
       textoPesquisa =
         textoPesquisa +
         `
-            <div class="itens-pesquisados" style="padding-top: 2em">  
+            <div class="itens-pesquisados" style="padding-top: .3em">  
             <a href="detalhes_filme.html?id=${
               retornoPesquisa.id
             }"><img src="https://image.tmdb.org/t/p/w500${

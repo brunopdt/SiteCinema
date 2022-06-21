@@ -12,7 +12,7 @@ main {
 }
 
 div.card-body {
-  margin-top: 0.2em;
+  padding: 0;
 }
 
 img.card-img-top {
