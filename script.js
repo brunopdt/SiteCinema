@@ -6,11 +6,19 @@ const mostraFilmes = data => {
     let filme = dadosFilmes.results[i]
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
-        <a href="detalhes_filme.html?id=${filme.id}"><img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" class="card-img-top" width="200" alt="FilmeXPTO"></a>
+        <a href="detalhes_filme.html?id=${
+          filme.id
+        }"><img src="https://image.tmdb.org/t/p/w500${
+      filme.poster_path
+    }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
-                    <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
+                    <p class="card-text ${getColor(filme.vote_average)}" >${
+      filme.vote_average
+    }</p>
+                    <p class="card-text" id="ultimaInfo">${
+                      filme.vote_count
+                    } avaliações</p>
                 </div>
             </div>
         `
@@ -26,11 +34,19 @@ const mostraFilmes2 = data => {
     let filme = dadosFilmes.results[i]
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
-        <a href="detalhes_filme.html?id=${filme.id}"><img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" class="card-img-top" width="200" alt="FilmeXPTO"></a>
+        <a href="detalhes_filme.html?id=${
+          filme.id
+        }"><img src="https://image.tmdb.org/t/p/w500${
+      filme.poster_path
+    }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
-                    <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
+                    <p class="card-text ${getColor(filme.vote_average)}" >${
+      filme.vote_average
+    }</p>
+                    <p class="card-text" id="ultimaInfo">${
+                      filme.vote_count
+                    } avaliações</p>
                 </div>
             </div>
         `
@@ -46,16 +62,34 @@ const mostraFilmes3 = data => {
     let filme = dadosFilmes.results[i]
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
-        <a href="detalhes_filme.html?id=${filme.id}"><img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" class="card-img-top" width="200" alt="FilmeXPTO"></a>
+        <a href="detalhes_filme.html?id=${
+          filme.id
+        }"><img src="https://image.tmdb.org/t/p/w500${
+      filme.poster_path
+    }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
-                    <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
+                    <p class="card-text ${getColor(filme.vote_average)}" >${
+      filme.vote_average
+    }</p>
+                    <p class="card-text" id="ultimaInfo">${
+                      filme.vote_count
+                    } avaliações</p>
                 </div>
             </div>
         `
   }
   document.getElementById('cinemas').innerHTML = dadosHTML
+}
+
+function getColor(vote) {
+  if (vote >= 8) {
+    return 'green'
+  } else if (vote >= 5) {
+    return 'orange'
+  } else {
+    return 'red'
+  }
 }
 
 const mostraErro = data => {

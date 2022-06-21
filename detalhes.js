@@ -14,16 +14,32 @@ function showMovie() {
   text =
     text +
     `<div class="row" style="display:flex">
-  <img class="col-md-12 col-lg-6" class="card-img-top" id="poster" src="https://image.tmdb.org/t/p/w500${dadosFilmes.poster_path}" alt="Card image cap">
+  <img class="col-md-12 col-lg-6" class="card-img-top" id="poster" src="https://image.tmdb.org/t/p/w500${
+    dadosFilmes.poster_path
+  }" alt="Card image cap">
   <div class="col-md-12 col-lg-6 mx-auto" class="card-body" >
       <h1 class="card-title">${dadosFilmes.title}</h1>
       <h6 class="card-text subtitle">(${dadosFilmes.original_title})</h6>
       <p class="card-text">${dadosFilmes.overview}</p>
-      <p class="card-text">${dadosFilmes.vote_average}</p>
-      <p class="card-text" id="ultimaInfo">Idioma original: ${dadosFilmes.original_language}</p>
+      <p class="card-text ${getColor(dadosFilmes.vote_average)}" >${
+      dadosFilmes.vote_average
+    }</p>
+      <p class="card-text" id="ultimaInfo">Idioma original: ${
+        dadosFilmes.original_language
+      }</p>
   </div>
 </div>`
   write.innerHTML = text
+}
+
+function getColor(vote) {
+  if (vote >= 8) {
+    return 'green'
+  } else if (vote >= 5) {
+    return 'orange'
+  } else {
+    return 'red'
+  }
 }
 
 function buscarFilmes(url) {

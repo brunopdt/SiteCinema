@@ -26,11 +26,19 @@ function exibeResultados() {
         textoPesquisa +
         `
             <div class="itens-pesquisados" style="padding-top: 2em">  
-            <a href="detalhes_filme.html?id=${retornoPesquisa.id}"><img src="https://image.tmdb.org/t/p/w500${retornoPesquisa.poster_path}" class="card-img-top" width="200" alt="Filme"></a>
+            <a href="detalhes_filme.html?id=${
+              retornoPesquisa.id
+            }"><img src="https://image.tmdb.org/t/p/w500${
+          retornoPesquisa.poster_path
+        }" class="card-img-top" width="200" alt="Filme"></a>
                     <div class="card-body">
                         <h5 class="card-title">${retornoPesquisa.title}</h5>
-                        <p class="card-text">${retornoPesquisa.vote_average}</p>
-                        <p class="card-text" id="ultimaInfo">${retornoPesquisa.vote_count} avaliações</p>
+                        <p class="card-text ${getColor(
+                          retornoPesquisa.vote_average
+                        )}" >${retornoPesquisa.vote_average}</p>
+                        <p class="card-text" id="ultimaInfo">${
+                          retornoPesquisa.vote_count
+                        } avaliações</p>
                     </div>
             </div>
         `
@@ -40,6 +48,16 @@ function exibeResultados() {
   document.getElementById('bloco1').innerHTML = ''
   document.getElementById('bloco2').innerHTML = ''
   document.getElementById('bloco3').innerHTML = ''
+}
+
+function getColor(vote) {
+  if (vote >= 8) {
+    return 'green'
+  } else if (vote >= 5) {
+    return 'orange'
+  } else {
+    return 'red'
+  }
 }
 
 function exibeErro() {

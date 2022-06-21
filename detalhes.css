@@ -13,13 +13,23 @@
 .footertext {
   margin-top: 15px;
   align-self: center;
-  color: #212529;
+  color: #fff;
 }
 
 main {
   background-color: #222831;
   display: flex;
   flex-wrap: wrap;
+}
+
+.green {
+  color: green !important;
+}
+.orange {
+  color: orange !important;
+}
+.red {
+  color: red !important;
 }
 
 .card-title {
