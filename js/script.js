@@ -4,6 +4,7 @@ const mostraFilmes = data => {
   let dadosHTML = ''
   for (let i = 0; i < dadosFilmes.results.length; i++) {
     let filme = dadosFilmes.results[i]
+    let anoEstreia = new Date(filme.release_date)
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
         <a href="detalhes_filme.html?id=${
@@ -12,7 +13,9 @@ const mostraFilmes = data => {
       filme.poster_path
     }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
-                    <h5 class="card-title">${filme.title}</h5>
+                    <h5 class="card-title">${
+                      filme.title
+                    } - ${anoEstreia.getFullYear()}</h5>
                     <p class="card-text ${getColor(filme.vote_average)}" >${
       filme.vote_average
     }</p>
@@ -32,6 +35,7 @@ const mostraFilmes2 = data => {
   let dadosHTML = ''
   for (let i = 0; i < dadosFilmes.results.length; i++) {
     let filme = dadosFilmes.results[i]
+    let anoEstreia = new Date(filme.release_date)
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
         <a href="detalhes_filme.html?id=${
@@ -40,7 +44,9 @@ const mostraFilmes2 = data => {
       filme.poster_path
     }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
-                    <h5 class="card-title">${filme.title}</h5>
+                    <h5 class="card-title">${
+                      filme.title
+                    } - ${anoEstreia.getFullYear()}</h5>
                     <p class="card-text ${getColor(filme.vote_average)}" >${
       filme.vote_average
     }</p>
@@ -60,6 +66,7 @@ const mostraFilmes3 = data => {
   let dadosHTML = ''
   for (let i = 0; i < dadosFilmes.results.length; i++) {
     let filme = dadosFilmes.results[i]
+    let anoEstreia = new Date(filme.release_date)
     dadosHTML += `
         <div class="card col-xs-12 col-sm-12 col-md-3 col-lg-2">
         <a href="detalhes_filme.html?id=${
@@ -68,7 +75,9 @@ const mostraFilmes3 = data => {
       filme.poster_path
     }" class="card-img-top" width="200" alt="FilmeXPTO"></a>
                 <div class="card-body">
-                    <h5 class="card-title">${filme.title}</h5>
+                    <h5 class="card-title">${
+                      filme.title
+                    } - ${anoEstreia.getFullYear()}</h5>
                     <p class="card-text ${getColor(filme.vote_average)}" >${
       filme.vote_average
     }</p>
