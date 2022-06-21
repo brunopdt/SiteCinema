@@ -15,7 +15,7 @@ function exibeResultados() {
       textoPesquisa +
       `
         <div class="itens-pesquisados">
-            <p>Não foram encontrado resultados para a pesquisa feita!</p>
+            <p class="card-text" style="padding-top: 5rem; padding-bottom: 5rem">Não foram encontrado resultados para a pesquisa feita!</p>
         </div>
     `
   } else {
@@ -30,7 +30,7 @@ function exibeResultados() {
                     <div class="card-body">
                         <h5 class="card-title">${retornoPesquisa.title}</h5>
                         <p class="card-text">${retornoPesquisa.vote_average}</p>
-                        <p class="card-text">${retornoPesquisa.release_date}</p>
+                        <p class="card-text" id="ultimaInfo">${retornoPesquisa.vote_count} avaliações</p>
                     </div>
             </div>
         `

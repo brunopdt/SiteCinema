@@ -15,8 +15,9 @@ function showMovie() {
     text +
     `<div class="row" style="display:flex">
   <img class="col-md-12 col-lg-6" class="card-img-top" id="poster" src="https://image.tmdb.org/t/p/w500${dadosFilmes.poster_path}" alt="Card image cap">
-  <div class="col-md-12 col-lg-6" class="card-body" >
+  <div class="col-md-12 col-lg-6 mx-auto" class="card-body" >
       <h1 class="card-title">${dadosFilmes.title}</h1>
+      <h6 class="card-text subtitle">(${dadosFilmes.original_title})</h6>
       <p class="card-text">${dadosFilmes.overview}</p>
       <p class="card-text">${dadosFilmes.vote_average}</p>
       <p class="card-text" id="ultimaInfo">Idioma original: ${dadosFilmes.original_language}</p>

@@ -10,7 +10,7 @@ const mostraFilmes = data => {
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
                     <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.release_date}</p>
+                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
                 </div>
             </div>
         `
@@ -30,7 +30,7 @@ const mostraFilmes2 = data => {
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
                     <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.release_date}</p>
+                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
                 </div>
             </div>
         `
@@ -50,7 +50,7 @@ const mostraFilmes3 = data => {
                 <div class="card-body">
                     <h5 class="card-title">${filme.title}</h5>
                     <p class="card-text">${filme.vote_average}</p>
-                    <p class="card-text" id="ultimaInfo">${filme.release_date}</p>
+                    <p class="card-text" id="ultimaInfo">${filme.vote_count} avaliações</p>
                 </div>
             </div>
         `

@@ -4,15 +4,6 @@
   padding-bottom: 1rem;
 }
 
-#searchForm {
-  display: flex;
-  margin-right: 2rem;
-}
-
-#textoPesquisa {
-  background-color: #393e46;
-}
-
 .logo {
   width: 4em;
   height: 4em;
@@ -36,13 +27,14 @@ main {
   font-weight: bold;
   color: #fff;
   margin-top: 3em;
+}
+
+.subtitle {
   margin-bottom: 3em;
-  margin-left: 3vw;
 }
 
 .card-text {
   color: #fff;
-  margin-left: 3vw;
 }
 
 #ultimaInfo {
@@ -53,25 +45,20 @@ main {
   width: 40%;
   margin-top: 3vw;
   margin-bottom: 3vw;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 480px) {
-  #searchForm {
-    margin-right: 0.5rem;
-  }
-
   .logo {
     margin-left: 0.5em;
   }
 
-  #textoPesquisa {
-    width: 12em;
-    margin-right: 1em;
-  }
-
   .card-title {
     margin-top: 0.5em;
-    margin-bottom: 1em;
+  }
+
+  .subtitle {
+    margin-bottom: 2em;
   }
 
   #poster {
@@ -81,6 +68,12 @@ main {
 
   #textoPesquisa {
     margin-right: 1.6em;
+  }
+  div.row {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0;
+    margin-right: 0%;
   }
 }
 
