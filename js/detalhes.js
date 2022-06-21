@@ -10,6 +10,7 @@ function showMovie() {
   let text = ''
   let dadosFilmes = JSON.parse(this.responseText)
   console.log(dadosFilmes)
+  let estreia = new Date(dadosFilmes.release_date)
 
   text =
     text +
@@ -19,7 +20,9 @@ function showMovie() {
   }" alt="Card image cap">
   <div class="col-md-12 col-lg-6 mx-auto" class="card-body" >
       <h1 class="card-title">${dadosFilmes.title}</h1>
-      <h6 class="card-text subtitle">(${dadosFilmes.original_title})</h6>
+      <h6 class="card-text subtitle">(${
+        dadosFilmes.original_title
+      } - ${estreia.toLocaleDateString()})</h6>
       <p class="card-text">${dadosFilmes.overview}</p>
       <p class="card-text ${getColor(dadosFilmes.vote_average)}" >${
       dadosFilmes.vote_average
